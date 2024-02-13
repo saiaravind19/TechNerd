@@ -17,6 +17,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.graphviz',
+    'sphinx.ext.ifconfig',
+    'sphinx_copybutton',
+    'sphinx_multiversion',
+    'sphinx_tabs.tabs',
+    'sphinx_rtd_theme',
+    'sphinxcontrib.mermaid',
 ]
 
 intersphinx_mapping = {
@@ -24,7 +31,7 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
-
+source_suffix = ['.rst','.md']
 master_doc = 'docs/source/index'
 
 templates_path = ['_templates']
