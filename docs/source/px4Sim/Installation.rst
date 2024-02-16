@@ -12,7 +12,7 @@ Install Dependencies
 Install mavros and mavlink packages using apt
 
 .. code-block:: bash
-   
+
    sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
 
 
@@ -44,6 +44,6 @@ Replace ``(name of the model)`` with the specific Gazebo model you intend to use
 Download QGroundControl
 -----------------------------------
 
-To control and monitor your PX4 simulation, you need a Ground Control Station (GCS). Download QGroundControl from `http://qgroundcontrol.com/downloads/ <http://qgroundcontrol.com/downloads/>`_ and follow the installation instructions for your operating system.
+To control and monitor your PX4 simulation, you need a Ground Control Station (GCS). Download `QGroundControl <http://qgroundcontrol.com/downloads/>`_ and follow the installation instructions for your operating system.
 
 Now you're ready to take control of your PX4 simulation with QGroundControl!
