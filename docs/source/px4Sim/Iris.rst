@@ -48,3 +48,4 @@ global GPS data local is with respect to the start of the drone
 
 /mavros/setpoint* if in case you want to use PX4 planner completely
 
+Each copter work in theri own local frame currently in this tutorial we will try out to have a global frame in future tutorials
