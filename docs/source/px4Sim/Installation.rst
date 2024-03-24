@@ -82,3 +82,6 @@ Add the follwing in your bashrc file
    export GAZEBO_MODEL_DATABASE_URI=""
    # Set path to sitl_gazebo repository
    export SITL_GAZEBO_PATH=$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic
+
+
+``Note`` Check if the path is set correctly using 'rospack find mavlink_sitl_gazebo'

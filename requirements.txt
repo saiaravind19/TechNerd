@@ -5,3 +5,4 @@ sphinx-copybutton
 sphinx-multiversion
 sphinx-tabs
 sphinxcontrib-mermaid
+sphinx-math

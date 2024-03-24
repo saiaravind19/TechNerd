@@ -2,13 +2,14 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'TechNerd'
+copyright = ''
+author = 'Sai Aravind'
 
 release = '0.1'
 version = '0.1.0'
 
+html_logo = 'docs/source/images/logo.png'
 # -- General configuration
 
 extensions = [
@@ -19,6 +20,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
     'sphinx.ext.ifconfig',
+    'sphinx.ext.mathjax',
     'sphinx_copybutton',
     'sphinx_multiversion',
     'sphinx_tabs.tabs',
@@ -42,3 +44,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+# MathJax configuration
+mathjax_path = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
