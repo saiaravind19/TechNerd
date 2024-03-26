@@ -7,6 +7,8 @@ Options for installing ROS 2 {DISTRO_TITLE_FULL}:
    
    px4Sim/Installation
    px4Sim/Background
-   px4Sim/module1
+   px4Sim/offboardControl/setpoint_position
+   px4Sim/offboardControl/velocity_control 
+ 
 
 
