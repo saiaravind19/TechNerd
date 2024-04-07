@@ -73,13 +73,7 @@ Add the follwing in your bashrc file
    source $PX4_HOME/Tools/simulation/gazebo-classic/setup_gazebo.bash $PX4_HOME $PX4_HOME/build/px4_sitl_default
    export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4_HOME
    export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic
-
-   # Set the plugin path so Gazebo finds our model and sim
-   export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic/build
-   # Set the model path so Gazebo finds the airframes
    export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models
-   # Disable online model lookup since this is quite experimental and unstable
-   export GAZEBO_MODEL_DATABASE_URI=""
    # Set path to sitl_gazebo repository
    export SITL_GAZEBO_PATH=$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic
 

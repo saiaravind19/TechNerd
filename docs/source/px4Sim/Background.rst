@@ -2,15 +2,15 @@ Background knowledge
 ===================================
 
 PX4 uses the uORB message bus for internal communication among its various modules. 
-For connections with the external world, such as simulation or other hardware, PX4 uses protocols like MAVLink for ground control and uXRCE-DDS for real-time communication with companion computer over ROS2.
+PX4 uses MAVLink and uXRCE-DDS protocols for integration with simulation,ground station and communication with companion computer.
 
-As the current tutorials are based on ROS1, we employ MAVROS packages. MAVROS enables MAVLink extendable communication between computers running ROS.
+As the current tutorials are based on ROS1, we employ MAVROS packages. MAVROS acts like a bridge between ROS1 and MAVLink protocal.
 
 Flight Modes in Multicopter
 -----------------------------------
 
 Different flight modes are available in PX4, enabling the autopilot to function in a deterministic way.
-These modes are designed to meet specific requirements, enhance safety, and facilitate efficient operation by automating common tasks.
+These modes are designed to meet specific requirements, enhance safety.
 
 Modes in Multicopter are grouped into three categories: `manual, autonomous, and manual-acrobatic`.
 
@@ -85,7 +85,7 @@ In PX4 there are different frame conventions.The local/world and body frames use
   
 Both frames are shown in the image below (FRD on the left/FLU on the right).
 
-.. image:: ../images/frame.png
+.. image:: /docs/source/images/frame.png
     :alt:  Frame representation of NED and ENU 
 
 `Image source <https://docs.px4.io/main/en/ros/ros2_comm.html>`_
@@ -131,10 +131,8 @@ Frema Conversion
     0 & 0 & -1 \\
     \end{bmatrix}
 
-https://mavlink.io/en/messages/common.html#MAV_FRAME_GLOBAL
 
+References
+----------------
 
-
-Now that we has some knowledge of local and global namespaces used so in this tutorial we will have a demo using the local coordinate to to navigate the drone to the desired setpoint.
-https://docs.px4.io/main/en/ros/external_position_estimation.html
-One can alse refer `mavros_msgs/State <https://docs.ros.org/en/noetic/api/mavros_msgs/html/msg/State.html>`_  msg for the all the pissible modes. 
+-  `Mavlink frame definitions <https://mavlink.io/en/messages/common.html#MAV_FRAME_GLOBAL>`_

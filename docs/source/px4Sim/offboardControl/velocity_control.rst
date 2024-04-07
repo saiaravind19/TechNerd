@@ -1,14 +1,19 @@
 Velocity control
 ==========================
 
+In this tutorial we will explore how to control the Iris drone using velocity commands in offboard mode.
+For this tutorial, we'll utilize a teleop node to generate velocity commands.
+
 Prerequicts
------------------
+---------------------
 Install teleop_keyboard package which takes keyboard inputs and publish in cmd_vel topic.
 
 .. code-block:: bash
 
 	sudo apt-get install ros-<distro>-teleop-twist-keyboard
 
+Step by Step Guide
+------------------------
 
 - Open a new terminal and launch the gazebo world
 
@@ -16,15 +21,16 @@ Install teleop_keyboard package which takes keyboard inputs and publish in cmd_v
 
     roslaunch mavros_bridge spawn_gazebo_world.launch
 
-- Open one more terminal and run the following which will spawn iris and triggers offboard mode.
+- In another terminal, run the following command to spawn the Iris drone and trigger the offboard mode:
 
 .. code-block:: bash
 
     roslaunch mavros_bridge spawn_sitl.launch module:=2
 
-- Open one more terminal and run the following to run keyboard_teleop node which will publish velocity commands in `/cmd_vel` topic.
+-  In yet another terminal, execute the following command to run the `keyboard_teleop` node, which publishes velocity commands to the `/cmd_vel` topic:
 
 .. code-block:: bash
+
 	rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 
@@ -201,7 +207,7 @@ Next, initialize the MAVROS message for arming the drone and setting the drone t
     	mavros_msgs::CommandBool arm_cmd;
     	arm_cmd.request.value = true;
 
-Function callback subscribing to `/cmd_vel` which is published using keyboard_teleop node 
+Function callback subscribing to `/cmd_vel` which is published using teleop node 
 
 .. code-block:: cpp
 

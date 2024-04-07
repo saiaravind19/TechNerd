@@ -3,13 +3,16 @@ Setpoint Position
 
 In this tutorial, we will learn how to use `setpoint_position` in offboard mode. By the end of this tutorial, we will understand how to hover the iris at a setpoint.
 
+Step by Step Guide
+------------------------
+
 - Open a new terminal and launch the gazebo world
 
 .. code-block:: bash
 
     roslaunch mavros_bridge spawn_gazebo_world.launch
 
-- Open one more terminal and run the following which will spawn iris and triggers offboard mode.
+- Open  another terminal and run the following which will spawn iris and triggers offboard mode.
 
 .. code-block:: bash
 

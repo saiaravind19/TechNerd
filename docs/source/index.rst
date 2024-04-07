@@ -1,5 +1,20 @@
 Welcome to TechNerd
 ===================================
+
+Hello, tech enthusiasts!! I'm Sai Aravind, a passionate robotic engineer specializing in swarm robotic systems. I just can't get enough of tinkering with robots and trying out new things. Whether it's diving into the latest tech or figuring out how things work, I love to learn and share what I know.
+
+I've put together this blog with beginners in mind. It's got some basic tutorials to help you kick off your own robotic projects. So, if you're just starting out or need a bit of help with your projects, I've got your back!
+
+Interested in discussing ideas, collaborating on projects, or simply geeking out over robotics? Don't hesitate to reach out!
+
+- `LinkedIn <https://www.linkedin.com/in/saiaravindexplorer/>`_ 
+- `Email <bplacearavind@gmail.com>`_.
+
+I'm always eager to connect with fellow tech enthusiasts and explore opportunities to work together on innovative and exciting projects.
+
+Table of Contents
+-----------------
+   
 .. toctree::
    :titlesonly:
    :maxdepth: 1
@@ -9,9 +24,14 @@ Welcome to TechNerd
 .. note::
 
    This project is under active development.
+ 
 
-Hello everyone! I'm Sai Aravind, a passionate robotic engineer specializing in swarm robotic systems. My fascination with robotics drives me to explore innovative solutions and share my knowledge with others.
+What's Next?
+------------
 
-This blog is crafted with beginners in mind, offering essential basics to kickstart your journey into the fascinating world of robotics. Whether you're looking to learn, collaborate, or seek assistance with your projects, I'm here to help!
+Here's a sneak peek at what I'm working on next:
 
-Feel free to connect with me via `LinkedIn <https://www.linkedin.com/in/saiaravindexplorer/>`_ or `email <bplacearavind@gmail.com>`_. I look forward to engaging with you and supporting your robotic endeavors!
+-  Behaviour Trees
+-  ROS2 Navigation Stack
+-  Micro ROS with ESP Microcontroller
+-  A Fun Project on ESP Mesh Network
