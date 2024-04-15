@@ -1,10 +1,14 @@
 Background knowledge 
 ===================================
+PX4 leverages the uORB message bus for internal communication, seamlessly integrating with simulation, ground stations, and companion computers through MAVLink and uXRCE-DDS protocols.
 
-PX4 uses the uORB message bus for internal communication among its various modules. 
-PX4 uses MAVLink and uXRCE-DDS protocols for integration with simulation,ground station and communication with companion computer.
+.. image:: /docs/source/images/PX4_architecture.svg
+    :alt:  FPX4 architecture 
+
+`Image source <https://docs.px4.io/main/en/concept/architecture.html>`_
 
 As the current tutorials are based on ROS1, we employ MAVROS packages. MAVROS acts like a bridge between ROS1 and MAVLink protocal.
+
 
 Flight Modes in Multicopter
 -----------------------------------
@@ -12,7 +16,7 @@ Flight Modes in Multicopter
 Different flight modes are available in PX4, enabling the autopilot to function in a deterministic way.
 These modes are designed to meet specific requirements, enhance safety.
 
-Modes in Multicopter are grouped into three categories: `manual, autonomous, and manual-acrobatic`.
+Different modes in Multicopter are grouped into three categories: **manual, autonomous, and manual-acrobatic**.
 
 **Manual-Easy:**
    - ``Position mode`` Easiest and safest manual mode for vehicles with a position fix/GPS. It controls acceleration over ground, yaw, and throttle.
@@ -23,12 +27,12 @@ Modes in Multicopter are grouped into three categories: `manual, autonomous, and
    - ``Acro`` Manual mode for acrobatic maneuvers, such as rolls and loops.
 **Autonomous:**
    - ``Hold`` Vehicle stops and hovers at its current position and altitude.
-   - ``Return`` Ascends to a safe altitude, flies to a safe location, and lands (requires GPS).
+   - ``Return`` Flies back to home position and lands (requires GPS).
    - ``Mission`` Executes a predefined flight plan uploaded to the flight controller (requires GPS).
    - ``Takeoff`` Vertical takeoff followed by switching to Hold mode.
    - ``Land`` Immediate landing.
    - ``Orbit`` Flies in a circle, facing towards the center.
-   - ``Follow Me`` Follows a beacon providing position setpoints.
+   - ``Follow Me``  Vehicle follows a beacon that is providing position setpoints. 
    - ``Offboard`` Obeys position, velocity, or attitude setpoints provided via MAVLink or ROS 2.
 
 For more information about the modes, refer to the `PX4 documentation <https://docs.px4.io/main/en/flight_modes_mc/>`_.

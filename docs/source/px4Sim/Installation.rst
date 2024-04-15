@@ -4,54 +4,71 @@ Installation
 Minimum Requirements
 -----------------------------------
 
-Before proceeding with the installation, ensure your system meets the minimum requirements.
-Install ROS 1 (Robot Operating System), with Noetic being the preferred version.
-You can follow the official ROS installation guide `here <https://wiki.ros.org/ROS/Installation>`_.
+Before you begin the setting up PX4 simulation , please make sure your system meets the minimum requirements.
 
-Install Dependencies
-Install mavros and mavlink packages using apt
-
-.. code-block:: bash
-
-   sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
+- Install ROS 1 (Robot Operating System) desktop version, we recommend using the Noetic version. For detailed installation instructions, please refer to the `ROS installation guide <https://wiki.ros.org/ROS/Installation>`_.
 
 
-Download the PX4 Source Code
------------------------------------
+Download the PX4 Source Code 
+------------------------------------------------------
 
-The PX4 source code is hosted on GitHub in the `PX4/PX4-Autopilot repository <https://github.com/PX4/PX4-Autopilot>`_.
 
-To fetch the latest version onto your computer, open a terminal and run the following command:
+Clone `PX4-Autopilot <https://github.com/PX4/PX4-Autopilot>`_.
 
 .. code-block:: bash
 
-   git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+   git clone https://github.com/PX4/PX4-Autopilot.git --recursive 
 
 This command will clone the repository along with its submodules.
+
+Install Dependencies
+----------------------------------
+
+
+- Install PX4 dependencies for ubuntu
+
+.. code-block:: bash
+      
+      cd PX4-Autopilot
+      sudo ./Tools/setup/ubuntu.sh  
+
+- Install Mavros Dependencies and Geographiclib 
+
+.. code-block:: bash
+      
+   sudo apt-get update
+   sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
+   sudo apt install geographiclib-tools
+ 
 
 Building PX4 for Simulation
 -----------------------------------
 
-To build PX4 for simulation with Gazebo Classic, follow these commands:
+Now lets builds PX4 along with all available Gazebo models.
 
 .. code-block:: bash
 
    cd PX4-Autopilot
+   # Doesnt start Gazebo sim and  build all avaialble gazebo models
    DONT_RUN=1 make px4_sitl gazebo-classic
 
+You can also build specific model using the below commands.
 
-Replace ``(name of the model)`` with the specific Gazebo model you intend to use. This will compile PX4 for simulation using Gazebo Classic.
+.. code-block:: bash
+
+   # Start Gazebo Classic with iris
+   make px4_sitl gazebo-classic_iris
+
+   # Start Gazebo Classic with plane
+   make px4_sitl gazebo-classic_plane
+
+   #start Gazebo Classic with typhoon_h480
+   make px4_sitl gazebo-classic_typhoon_h480
+
+For more info refere `PX4 Gazebo classic <https://docs.px4.io/main/en/sim_gazebo_classic/>`_
 
 
-Download QGroundControl
------------------------------------
-
-To control and monitor your PX4 simulation, you need a Ground Control Station (GCS). Download `QGroundControl <http://qgroundcontrol.com/downloads/>`_ and follow the installation instructions for your operating system.
-
-Now you're ready to take control of your PX4 simulation with QGroundControl!
-
-
-Work space setup
+Settingup ROS Workspace
 -----------------------------------
 Open a terminal in your home directory
 
@@ -64,18 +81,18 @@ Open a terminal in your home directory
 Set gazebo path for Simulation
 ------------------------------------
 
-Add the follwing in your bashrc file 
+Add the follwing to your bashrc file.
 
 .. code-block:: bash
 
    source ~/ros_ws/devel/setup.bash
-   export PX4_HOME=~/PX4-Autopilot
-   source $PX4_HOME/Tools/simulation/gazebo-classic/setup_gazebo.bash $PX4_HOME $PX4_HOME/build/px4_sitl_default
-   export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4_HOME
-   export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic
-   export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models
+   export PX4=~/PX4-Autopilot
+   source $PX4/Tools/simulation/gazebo-classic/setup_gazebo.bash $PX4 $PX4/build/px4_sitl_default
+   export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4
+   export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$PX4/Tools/simulation/gazebo-classic/sitl_gazebo-classic
+   export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$PX4/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models
    # Set path to sitl_gazebo repository
-   export SITL_GAZEBO_PATH=$PX4_HOME/Tools/simulation/gazebo-classic/sitl_gazebo-classic
+   export SITL_GAZEBO_PATH=$PX4/Tools/simulation/gazebo-classic/sitl_gazebo-classic
 
 
 ``Note`` Check if the path is set correctly using 'rospack find mavlink_sitl_gazebo'

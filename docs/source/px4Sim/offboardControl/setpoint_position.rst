@@ -1,7 +1,6 @@
 Setpoint Position
 ==========================
-
-In this tutorial, we will learn how to use `setpoint_position` in offboard mode. By the end of this tutorial, we will understand how to hover the iris at a setpoint.
+In this tutorial, we will learn how to use **setpoint_position** in offboard mode. By the end of this tutorial, we will understand how to hover the iris at a setpoint.
 
 Step by Step Guide
 ------------------------
@@ -10,13 +9,22 @@ Step by Step Guide
 
 .. code-block:: bash
 
-    roslaunch mavros_bridge spawn_gazebo_world.launch
+    roslaunch sitl_tutorials spawn_gazebo_world.launch
 
 - Open  another terminal and run the following which will spawn iris and triggers offboard mode.
 
 .. code-block:: bash
 
-    roslaunch mavros_bridge spawn_sitl.launch
+    roslaunch sitl_tutorials spawn_sitl.launch
+
+
+Once the drone is spawned, it should start flying and stabilize itself at a certain point, just like you've seen in the video.
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/Dck6KpjZeBY?si=UWcLI-oBzXBHA1l9" title="Offboard control" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
 
 Code
 ----
