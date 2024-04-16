@@ -94,7 +94,7 @@ Both frames are shown in the image below (FRD on the left/FLU on the right).
 
 `Image source <https://docs.px4.io/main/en/ros/ros2_comm.html>`_
 
-Frema Conversion
+Frame Conversions
 ------------------
 
 1. **FLU to FRD :**
