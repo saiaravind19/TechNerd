@@ -9,7 +9,7 @@ author = 'Sai Aravind'
 release = '0.1'
 version = '0.1.0'
 
-html_logo = 'source/images/logo.png'
+html_logo = 'docs/source/images/logo.png'
 # -- General configuration
 
 extensions = [
@@ -34,7 +34,7 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 source_suffix = ['.rst','.md']
-master_doc = 'index'
+master_doc = 'docs/index'
 
 templates_path = ['_templates']
 

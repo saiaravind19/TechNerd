@@ -2,7 +2,7 @@ Background knowledge
 ===================================
 PX4 leverages the uORB message bus for internal communication, seamlessly integrating with simulation, ground stations, and companion computers through MAVLink and uXRCE-DDS protocols.
 
-.. image:: /source/images/PX4_architecture.svg
+.. image:: /docs/source/images/PX4_architecture.svg
     :alt:  FPX4 architecture 
 
 `Image source <https://docs.px4.io/main/en/concept/architecture.html>`_
@@ -89,7 +89,7 @@ In PX4 there are different frame conventions.The local/world and body frames use
   
 Both frames are shown in the image below (FRD on the left/FLU on the right).
 
-.. image:: /source/images/frame.png
+.. image:: /docs/source/images/frame.png
     :alt:  Frame representation of NED and ENU 
 
 `Image source <https://docs.px4.io/main/en/ros/ros2_comm.html>`_
