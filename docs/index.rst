@@ -19,7 +19,7 @@ Table of Contents
    :titlesonly:
    :maxdepth: 1
 
-   px4_sim
+   source/px4_sim
 
 .. note::
 
