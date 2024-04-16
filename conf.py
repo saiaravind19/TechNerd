@@ -34,7 +34,7 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 source_suffix = ['.rst','.md']
-master_doc = 'docs/index'
+master_doc = 'index'
 
 templates_path = ['_templates']
 
