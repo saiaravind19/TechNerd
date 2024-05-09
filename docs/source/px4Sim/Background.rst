@@ -64,7 +64,7 @@ Mavros offers a window into the global and local coordinates of drones.
    - Used for precision tasks, obstacle avoidance, and local maneuvers.
 
 
-Coordinate Frames:
+Coordinate Frames
 ---------------------------
 
 In robotics and computer graphics, coordinate frames are essential for representing the position and orientation of objects in space relative to a reference point.Each frame has its own origin and axes, allowing us to perform transformations between them.
