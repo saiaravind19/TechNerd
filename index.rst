@@ -20,7 +20,7 @@ Table of Contents
    :maxdepth: 1
 
    docs/source/px4_sim.rst
-
+   docs/source/wireless_md.rst
 .. note::
 
    This project is under active development.
