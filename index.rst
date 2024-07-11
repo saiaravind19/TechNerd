@@ -21,6 +21,8 @@ Table of Contents
 
    docs/source/px4_sim.rst
    docs/source/wireless_md.rst
+   docs/source/uv_sterilisation.rst
+
 .. note::
 
    This project is under active development.
