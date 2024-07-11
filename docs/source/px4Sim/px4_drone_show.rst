@@ -34,6 +34,8 @@ Step-by-Step Guide
    <iframe width="700" height="400" src="https://www.youtube.com/embed/PH_vu_SqwpU?si=fSjG__Zh51kaApee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+Collision Avoidance
+---------------------
 
 **Note:**
 Please be aware that the current setup does not include any collision avoidance algorithm. As the number of drones increases, the risk of drone collisions may also rise.

@@ -46,7 +46,7 @@ Installation
 
 .. code-block:: bash
 
-   https://github.com/saiaravind19/Wireless_Motor_Driver
+  git clone https://github.com/saiaravind19/Wireless_Motor_Driver
 
 .. note::
    Make sure the `data` folder is present in the current working directory.

@@ -40,6 +40,13 @@ Install Dependencies
    sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
    sudo apt install geographiclib-tools
  
+- Install RVO dependencies
+
+.. code-block:: bash
+
+   git clone https://github.com/snape/RVO2-3D.git
+   cd RVO2-3D  && mkdir build && cd build
+   cmake .. && sudo make install
 
 Building PX4 for Simulation
 -----------------------------------
