@@ -75,7 +75,7 @@ You can also build specific model using the below commands.
 For more info refere `PX4 Gazebo classic <https://docs.px4.io/main/en/sim_gazebo_classic/>`_
 
 
-Settingup ROS Workspace
+Setting up ROS Workspace
 -----------------------------------
 Open a terminal in your home directory
 
