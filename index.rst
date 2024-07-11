@@ -1,7 +1,7 @@
 Welcome to TechNerd
 ===================================
 
-Hello, tech enthusiasts!! I'm Sai Aravind, a passionate robotic engineer specializing in swarm robotic systems. I just can't get enough of tinkering with robots and trying out new things. Whether it's diving into the latest tech or figuring out how things work, I love to learn and share what I know.
+Hello, tech enthusiasts!! I'm Sai Aravind, a fellow robotic engineer specializing in swarm robotic systems. I just can't get enough of tinkering with robots and trying out new things. Whether it's diving into the latest tech or figuring out how things work, I love to learn and share what I know.
 
 I've put together this blog with beginners in mind. It's got some basic tutorials to help you kick off your own robotic projects. So, if you're just starting out or need a bit of help with your projects, I've got your back!
 
@@ -20,6 +20,7 @@ Table of Contents
    :maxdepth: 1
 
    docs/source/px4_sim.rst
+   docs/source/px4Sim/px4_drone_show.rst
    docs/source/wireless_md.rst
    docs/source/uv_sterilisation.rst
 
