@@ -5,6 +5,10 @@ This project lets you control a swarm of drones to create custom shapes in the s
 
 Excited to try it yourself? In this blog post, we'll walk you through running the system on your local machine.
 
+Installation
+-----------------------
+For settinup work space and dependency liberarues please follow :doc:`installation guide <Installation>`.
+
 Step-by-Step Guide
 ------------------
 

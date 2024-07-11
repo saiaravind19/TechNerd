@@ -20,4 +20,3 @@ In this section, we will explore the following key topics:
    px4Sim/offboardControl/setpoint_position
    px4Sim/offboardControl/velocity_control 
    px4Sim/offboardControl/multidrone_sim
-   px4Sim/px4_drone_show 
