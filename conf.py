@@ -24,7 +24,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_multiversion',
     'sphinx_tabs.tabs',
-    'sphinx_rtd_theme',
+    'sphinx_book_theme',
     'sphinxcontrib.mermaid',
 ]
 
@@ -32,6 +32,7 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
+
 intersphinx_disabled_domains = ['std']
 source_suffix = ['.rst','.md']
 master_doc = 'index'
@@ -40,7 +41,15 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
+html_theme_options = {
+    "logo_only": True,
+    "repository_url": "https://github.com/saiaravind/TechNerd",
+    "use_repository_button": True,
+    "use_issues_button": True,
+    "use_download_button": True,
+    "use_fullscreen_button": True,
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
