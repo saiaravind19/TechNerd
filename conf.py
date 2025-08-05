@@ -43,7 +43,6 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    "logo_only": True,
     "repository_url": "https://github.com/saiaravind/TechNerd",
     "use_repository_button": True,
     "use_issues_button": True,

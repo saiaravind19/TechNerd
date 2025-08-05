@@ -19,10 +19,12 @@ Table of Contents
    :titlesonly:
    :maxdepth: 1
 
-   docs/source/px4_sim.rst
    docs/source/px4Sim/px4_drone_show.rst
-   docs/source/wireless_md.rst
+   docs/source/amr_sorting_system.rst
    docs/source/uv_sterilisation.rst
+   docs/source/wireless_md.rst
+   docs/source/px4_sim.rst
+
 
 .. note::
 
