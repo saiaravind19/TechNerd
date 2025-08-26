@@ -92,7 +92,7 @@ Both frames are shown in the image below (FRD on the left/FLU on the right).
 .. image:: /docs/source/images/frame.png
     :alt:  Frame representation of NED and ENU 
 
-`Image source <https://docs.px4.io/main/en/ros/ros2_comm.html>`_
+`Frame reference source <https://docs.px4.io/main/en/ros/ros2_comm.html>`_
 
 Frame Conversions
 ------------------

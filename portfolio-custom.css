@@ -1,0 +1,147 @@
+/* Portfolio-focused custom CSS for Furo theme */
+
+/* Hero section styling */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Project cards */
+.project-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.skill-item {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: #2563eb;
+}
+
+/* Contact section */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #1d4ed8;
+}
+
+/* Enhanced code blocks */
+.highlight {
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+    overflow: hidden;
+}
+
+/* Custom admonitions */
+.admonition.tip {
+    border-left: 4px solid #10b981;
+    background-color: #f0fdf4;
+}
+
+.admonition.warning {
+    border-left: 4px solid #f59e0b;
+    background-color: #fffbeb;
+}
+
+.admonition.note {
+    border-left: 4px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .project-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+}
+
+[data-theme="dark"] .skill-item {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .skill-item:hover {
+    border-color: #60a5fa;
+}

@@ -37,9 +37,9 @@ Step by Step Guide
 You can now fly the drone using the teleop keyboard commands. Try out the controls and let me know how it feels.
 
 .. raw:: html
-    <iframe width="700" height="400" src="https://www.youtube.com/embed/Dck6KpjZeBY?si=UWcLI-oBzXBHA1l9" title="Offboard control" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
 
+   <iframe width="700" height="400" src="https://www.youtube.com/embed/Dck6KpjZeBY?si=UWcLI-oBzXBHA1l9" title="Offboard control" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+   </iframe>
 
 Code
 ---------

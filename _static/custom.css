@@ -1,0 +1,483 @@
+/* PyData Theme Portfolio Customizations */
+
+/* Hero section styling */
+.hero-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-banner .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+/* Project showcase cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.project-card h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-card .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+
+.tech-tag {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Project link styling */
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: #2563eb;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.project-link:hover,
+.project-link:visited,
+.project-link:active,
+.project-link:focus {
+    background: #1d4ed8;
+    color: white !important;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Dark theme project links */
+[data-bs-theme="dark"] .project-link {
+    background: #60a5fa;
+    color: #1f2937 !important;
+}
+
+[data-bs-theme="dark"] .project-link:hover,
+[data-bs-theme="dark"] .project-link:visited,
+[data-bs-theme="dark"] .project-link:active,
+[data-bs-theme="dark"] .project-link:focus {
+    background: #3b82f6;
+    color: #1f2937 !important;
+}
+
+/* Skills section */
+.skills-section {
+    background: #f8fafc;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    margin: 3rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.skill-category {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #667eea;
+}
+
+.skill-category h4 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    padding: 0.5rem 0;
+    color: #6b7280;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skill-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-size: 0.75rem;
+}
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+    border-radius: 16px;
+    margin: 3rem 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: #667eea;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    position: relative;
+}
+
+.contact-btn:hover,
+.contact-btn:visited,
+.contact-btn:active,
+.contact-btn:focus {
+    background: #5a67d8;
+    color: white !important;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Fix tooltip/popup behavior for contact buttons */
+.contact-btn::before,
+.contact-btn::after {
+    display: none !important;
+}
+
+/* Ensure FontAwesome icons don't trigger tooltips */
+.contact-btn i {
+    pointer-events: none;
+}
+
+/* Override any theme tooltip styles */
+.tooltip {
+    display: none !important;
+}
+
+[data-bs-toggle="tooltip"] {
+    pointer-events: auto !important;
+}
+
+/* Fix hover state to prevent sticky tooltips */
+.contact-btn:hover::before,
+.contact-btn:hover::after {
+    display: none !important;
+}
+
+.contact-btn[title]:hover::after {
+    display: none !important;
+}
+
+/* Disable browser default tooltips */
+.contact-btn[title] {
+    position: relative;
+}
+
+.contact-btn[title]:hover::after {
+    content: none !important;
+}
+
+/* Completely disable all tooltip behaviors */
+.contact-btn, .contact-btn * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Override PyData theme tooltips */
+.bd-header .navbar-nav .nav-link[title]:hover::after,
+.navbar-icon-links a[title]:hover::after {
+    display: none !important;
+}
+
+/* Disable Bootstrap tooltips */
+.tooltip.show {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* Remove title attributes via CSS (fallback) */
+.contact-btn:hover {
+    /* Ensure no title attribute effects */
+    position: relative;
+}
+
+/* Modern CSS to handle sticky tooltips */
+.contact-btn {
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Force remove any floating elements that could be tooltips */
+body::after,
+body::before {
+    display: none !important;
+}
+
+/* Final override for any persistent tooltips */
+
+/* Enhanced navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Custom admonitions */
+.admonition {
+    border-radius: 8px;
+    border-left: 4px solid;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+}
+
+.admonition.note {
+    border-left-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+.admonition.tip {
+    border-left-color: #10b981;
+    background-color: #f0fdf4;
+}
+
+.admonition.warning {
+    border-left-color: #f59e0b;
+    background-color: #fffbeb;
+}
+
+/* Code blocks */
+.highlight {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-banner h1 {
+        font-size: 2.25rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark theme adjustments */
+[data-bs-theme="dark"] .project-card {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+}
+
+[data-bs-theme="dark"] .project-card h3 {
+    color: #f9fafb;
+}
+
+[data-bs-theme="dark"] .skills-section {
+    background: #1f2937;
+}
+
+[data-bs-theme="dark"] .skill-category {
+    background: #374151;
+    color: #f9fafb;
+}
+
+[data-bs-theme="dark"] .skill-category h4 {
+    color: #f9fafb;
+}
+
+[data-bs-theme="dark"] .tech-tag {
+    background: #1e40af;
+    color: #dbeafe;
+}
+
+/* Table of contents styling */
+.bd-toc .nav > li > a {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.bd-toc .nav > li > a:hover {
+    background-color: rgba(102, 126, 234, 0.1);
+}
+
+/* Footer customization */
+.bd-footer {
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 4rem;
+}
+
+[data-bs-theme="dark"] .bd-footer {
+    background: #1f2937;
+    border-top-color: #374151;
+}
+
+/* Hide any toctree elements completely */
+.toctree-wrapper,
+.toctree,
+div.toctree-wrapper,
+.compound .toctree-wrapper {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide sidebar toctree if it appears */
+.sidebar .toctree-wrapper,
+.sidebar .toctree {
+    display: none !important;
+}
+
+/* Hide any remaining toctree elements */
+.document .toctree-wrapper {
+    display: none !important;
+}
+
+/* Hide navigation elements that might show toctree content */
+.prev-next-area,
+.prev-next,
+.footer-article-nav,
+.article-footer-navigation,
+.bd-article-container .prev-next-area {
+    display: none !important;
+}
+
+/* Hide any "next" or "previous" navigation links */
+.btn-outline-primary[href*="px4"],
+.btn-outline-primary[href*="sitl"],
+a[href*="px4_sitl_tutorials"] {
+    display: none !important;
+}
+
+/* Hide bottom navigation completely */
+.bd-footer-article {
+    display: none !important;
+}
+
+/* Hide PyData theme navigation buttons */
+.prev-next-bottom {
+    display: none !important;
+}
+
+/* Hide any auto-generated navigation */
+.sphinxsidebarwrapper ul,
+.sphinxsidebar ul {
+    display: none !important;
+}
+
+/* Comprehensive toctree hiding */
+*[class*="toctree"],
+*[class*="navigation"],
+.compound > .toctree-wrapper,
+.section > .toctree-wrapper {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
