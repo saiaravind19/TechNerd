@@ -65,7 +65,7 @@ Featured Projects
             <span class="tech-tag">Python</span>
             <span class="tech-tag">RVO</span>
          </div>
-         <a href="docs/source/px4_drone_show.html" class="project-link">Learn More →</a>
+         <a href="docs/source/px4Sim/px4_drone_show.html" class="project-link">Learn More →</a>
       </div>
 
       <div class="project-card">
@@ -113,7 +113,7 @@ Featured Projects
             <span class="tech-tag">ROS</span>
             <span class="tech-tag">PX4</span>
             <span class="tech-tag">Gazebo</span>         </div>
-         <a href="docs/source/px4_sim.html.html" class="project-link">Learn More →</a>
+         <a href="docs/source/px4_sim.html" class="project-link">Learn More →</a>
       </div>
    </div>
 
