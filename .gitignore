@@ -9,6 +9,8 @@
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
+*/venv/*
+
 *.DS_Store
 
 # IPython
@@ -122,12 +124,10 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv/*
-blog/
-env.bak/
-venv.bak/
+# Virtual environments
+venv/
+.venv/
+*/venv/*
 
 # Spyder project settings
 .spyderproject

@@ -6,13 +6,12 @@ Welcome to TechNerd - Robotics Portfolio
 About Me
 --------
 
-Hello, tech enthusiasts! I'm **Sai Aravind**, a passionate robotic engineer specializing in **swarm robotic systems**. 
-I have an insatiable curiosity for technology and love diving deep into complex problems, whether it's designing 
-autonomous systems or exploring the latest advancements in robotics.
+Hello, tech enthusiasts!! I’m Sai Aravind, a fellow robotic engineer specializing in swarm robotic systems. I just can’t get enough of tinkering with robots and trying out new things. Whether it’s diving into the latest tech or figuring out how things work, I love to learn and share what I know.
 
-This portfolio showcases my journey through various projects, from PX4 drone simulations to innovative 
-sterilization systems. Each project represents a learning experience and a step forward in my quest to 
-push the boundaries of what's possible with robotics.
+I’ve put together this blog with beginners in mind. It’s got some basic tutorials to help you kick off your own robotic projects. So, if you’re just starting out or need a bit of help with your projects, I’ve got your back!
+
+Interested in discussing ideas, collaborating on projects, or simply geeking out over robotics? Don’t hesitate to reach out!
+
 
 .. raw:: html
 
@@ -57,18 +56,30 @@ Featured Projects
 
    <div class="project-grid">
       <div class="project-card">
-         <h3>🚁 PX4 Drone Simulation</h3>
-         <p>Comprehensive simulation environment for drone development using PX4 autopilot and Gazebo. 
-         Features multi-drone coordination and advanced flight control algorithms.</p>
+         <h3>🚁 Drone Show using PX4</h3>
+         <p> On the go drone formation based on shapes in the image while avoiding collision.</p>
          <div class="tech-stack">
             <span class="tech-tag">PX4</span>
             <span class="tech-tag">Gazebo</span>
             <span class="tech-tag">ROS2</span>
             <span class="tech-tag">Python</span>
+            <span class="tech-tag">RVO</span>
          </div>
-         <a href="docs/source/px4_sim.html" class="project-link">Learn More →</a>
+         <a href="docs/source/px4_drone_show.html" class="project-link">Learn More →</a>
       </div>
-      
+
+      <div class="project-card">
+         <h3>🏭 AMR Sorting System</h3>
+         <p>A Swarm of</p>
+         <div class="tech-stack">
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Path Planning</span>
+            <span class="tech-tag">AMR</span>
+            <span class="tech-tag">OpenCV</span>
+         </div>
+         <a href="docs/source/amr_sorting_system.html" class="project-link">Learn More →</a>
+      </div>
+
       <div class="project-card">
          <h3>📡 Wireless Medical Device</h3>
          <p>IoT-enabled medical monitoring system with real-time data transmission and cloud analytics. 
@@ -94,18 +105,15 @@ Featured Projects
          </div>
          <a href="docs/source/uv_sterilisation.html" class="project-link">Learn More →</a>
       </div>
-      
+
       <div class="project-card">
-         <h3>🏭 AMR Sorting System</h3>
-         <p>Autonomous Mobile Robot for warehouse automation with computer vision and path planning. 
-         Increases efficiency in logistics and manufacturing operations.</p>
+         <h3>PX4 SITL tutorials</h3>
+         <p>Basic tutorials about PX4 SITL to help beginners to get started.</p>
          <div class="tech-stack">
-            <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">Path Planning</span>
-            <span class="tech-tag">AMR</span>
-            <span class="tech-tag">OpenCV</span>
-         </div>
-         <a href="docs/source/amr_sorting_system.html" class="project-link">Learn More →</a>
+            <span class="tech-tag">ROS</span>
+            <span class="tech-tag">PX4</span>
+            <span class="tech-tag">Gazebo</span>         </div>
+         <a href="docs/source/px4_sim.html.html" class="project-link">Learn More →</a>
       </div>
    </div>
 
