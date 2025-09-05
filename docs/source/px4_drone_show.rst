@@ -7,7 +7,7 @@ Excited to try it yourself? In this blog post, we'll walk you through running th
 
 Installation
 -----------------------
-For settinup work space and dependency liberarues please follow :doc:`installation guide <Installation>`.
+For settinup work space and dependency liberarues please follow :doc:`installation guide <px4Sim/Installation>`.
 
 Step-by-Step Guide
 ------------------

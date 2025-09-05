@@ -1,22 +1,35 @@
-==========================================
-Welcome to TechNerd - Robotics Portfolio
-==========================================
+.. raw:: html
+
+   <div class="hero-banner">
+      <p class="subtitle">
+         Welcome to my space.
+         Exploring the frontiers of robotics and automation through hands-on projects, 
+         tutorials on swarm robotics systems.
+         Interested in discussing ideas, collaborating on projects, or simply geeking out over robotics? Don't hesitate to reach out!
+      </p>
+      <!--div class="contact-links">
+         <a href="https://www.linkedin.com/in/saiaravindexplorer/" class="contact-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+         </a>
+         <a href="mailto:bplacearavind@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope"></i> Email
+         </a>
+         <a href="https://github.com/saiaravind19" class="contact-btn">
+            <i class="fab fa-github"></i> GitHub
+         </a>
+         <a href="https://drive.google.com/file/d/1Xlu0VwFYl18RiJV-ikHpRSfR4niD70vo/view?usp=sharing" class="contact-btn resume-btn" target="_blank">
+            <i class="fas fa-file-pdf"></i> Resume
+         </a>
+      </div-->
+   </div>
 
 
-About Me
---------
-
-Hello, tech enthusiasts!! I’m Sai Aravind, a fellow robotic engineer specializing in swarm robotic systems. I just can’t get enough of tinkering with robots and trying out new things. Whether it’s diving into the latest tech or figuring out how things work, I love to learn and share what I know.
-
-I’ve put together this blog with beginners in mind. It’s got some basic tutorials to help you kick off your own robotic projects. So, if you’re just starting out or need a bit of help with your projects, I’ve got your back!
-
-Interested in discussing ideas, collaborating on projects, or simply geeking out over robotics? Don’t hesitate to reach out!
-
+Technical Expertise
+-------------------
 
 .. raw:: html
 
    <div class="skills-section">
-      <h3>🛠️ Technical Expertise</h3>
       <div class="skills-grid">
          <div class="skill-category">
             <h4>Robotics & Automation</h4>
@@ -61,56 +74,40 @@ Featured Projects
          <div class="tech-stack">
             <span class="tech-tag">PX4</span>
             <span class="tech-tag">Gazebo</span>
-            <span class="tech-tag">ROS2</span>
             <span class="tech-tag">Python</span>
             <span class="tech-tag">RVO</span>
          </div>
-         <a href="docs/source/px4Sim/px4_drone_show.html" class="project-link">Learn More →</a>
-      </div>
-
-      <div class="project-card">
-         <h3>🏭 AMR Sorting System</h3>
-         <p>A Swarm of</p>
-         <div class="tech-stack">
-            <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">Path Planning</span>
-            <span class="tech-tag">AMR</span>
-            <span class="tech-tag">OpenCV</span>
-         </div>
-         <a href="docs/source/amr_sorting_system.html" class="project-link">Learn More →</a>
-      </div>
-
-      <div class="project-card">
-         <h3>📡 Wireless Medical Device</h3>
-         <p>IoT-enabled medical monitoring system with real-time data transmission and cloud analytics. 
-         Designed for remote patient monitoring and healthcare applications.</p>
-         <div class="tech-stack">
-            <span class="tech-tag">ESP32</span>
-            <span class="tech-tag">WiFi</span>
-            <span class="tech-tag">Cloud IoT</span>
-            <span class="tech-tag">C++</span>
-         </div>
-         <a href="docs/source/wireless_md.html" class="project-link">Learn More →</a>
+         <a href="docs/source/px4_drone_show.html" class="project-link">Learn More →</a>
       </div>
       
       <div class="project-card">
-         <h3>🦠 UV Sterilization System</h3>
-         <p>Automated UV-C sterilization robot with intelligent navigation and safety protocols. 
-         Perfect for hospitals, offices, and public spaces.</p>
+         <h3>🏭 AMR Sorting System</h3>
+         <p>A Swarm of AMR sorting packages</p>
          <div class="tech-stack">
-            <span class="tech-tag">Arduino</span>
-            <span class="tech-tag">UV-C LEDs</span>
-            <span class="tech-tag">Navigation</span>
-            <span class="tech-tag">Safety Systems</span>
+            <span class="tech-tag">ROS2</span>
+            <span class="tech-tag">Navigation2</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">C++</span>
          </div>
-         <a href="docs/source/uv_sterilisation.html" class="project-link">Learn More →</a>
+         <a href="amr_sorting_system.html" class="project-link">Learn More</a>
       </div>
-
+      
       <div class="project-card">
-         <h3>PX4 SITL tutorials</h3>
-         <p>Basic tutorials about PX4 SITL to help beginners to get started.</p>
+         <h3>Gazebo Terrain Generator</h3>
+         <p>Procedural terrain generation tool for Gazebo robotics simulator. Creates realistic environments for testing autonomous vehicles and robot navigation systems.</p>
          <div class="tech-stack">
-            <span class="tech-tag">ROS</span>
+            <span class="tech-tag">Gazebo</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">SDF</span>
+            <span class="tech-tag">Blender</span>
+         </div>
+         <a href="gazebo_terrain_generator.html" class="project-link">Learn More</a>
+      </div>
+      
+      <div class="project-card">
+         <h3>PX4 Drone Show</h3>
+         <p>Synchronized drone light show system using PX4 autopilot. Features choreographed flight patterns, LED control, and multi-vehicle coordination for aerial performances.</p>
+         <div class="tech-stack">
             <span class="tech-tag">PX4</span>
             <span class="tech-tag">Gazebo</span>         </div>
          <a href="docs/source/px4_sim.html" class="project-link">Learn More →</a>
@@ -153,7 +150,7 @@ Here's a sneak peek at upcoming projects and content:
    :maxdepth: 2
    
    docs/source/px4_sim.rst
-   docs/source/px4Sim/px4_drone_show.rst
+   docs/source/px4_drone_show.rst
    docs/source/wireless_md.rst
    docs/source/uv_sterilisation.rst
    docs/source/amr_sorting_system.rst

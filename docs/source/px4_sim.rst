@@ -14,6 +14,8 @@ In this section, we will explore the following key topics:
 ---------------------
 
 .. toctree::
+   :maxdepth: 1
+   :caption: PX4 SITL Tutorials
    
    px4Sim/Installation
    px4Sim/Background

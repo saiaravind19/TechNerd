@@ -1,8 +1,6 @@
 # Configuration file for the Sphinx documentation builder.
 
-# -- Project information
-
-project = 'TechNerd'
+project = 'Sai Aravind'
 copyright = ''
 author = 'Sai Aravind'
 
@@ -44,13 +42,13 @@ templates_path = ['_templates']
 html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     "logo": {
-        "text": "TechNerd",
+        "text": "Sai Aravind",
         "image_light": "docs/source/images/logo.png",
         "image_dark": "docs/source/images/logo.png",
     },
     "navbar_align": "content",
     "navbar_center": [],  # Empty to remove project tabs
-    "navbar_end": ["navbar-icon-links", "theme-switcher"],
+    "navbar_end": ["navbar-icon-links"],
     "navbar_persistent": ["search-button"],
     "primary_sidebar_end": ["sidebar-ethical-ads"],
     "secondary_sidebar_items": ["page-toc"],
@@ -77,12 +75,18 @@ html_theme_options = {
             "icon": "fas fa-envelope",
             "type": "fontawesome",
         },
+        {
+            "name": "Resume",
+            "url": "https://drive.google.com/file/d/1Xlu0VwFYl18RiJV-ikHpRSfR4niD70vo/view?usp=sharing",
+            "icon": "fas fa-file-pdf",
+            "type": "fontawesome",
+        },
     ],
-    "announcement": "🚀 Welcome to my robotics portfolio and tech blog!",
+    "announcement": "🚀 Hello Folks! Welcome to my robotics portfolio and tech blog!",
 }
 
 # Build settings
-html_title = 'TechNerd - Robotics & Tech Blog'
+html_title = 'Sai Aravind - Robotics & Tech Blog'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_js_files = ['disable-tooltips.js']
